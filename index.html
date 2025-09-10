@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!-- Declares the document type -->
+<html lang="en">    
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive scaling -->
+    <title>Site</title> <!-- Browser tab title -->
+    <link rel="stylesheet" href="styles.css"> <!-- External stylesheet -->
+    <style>
+    nav ul {
+        list-style: none;              /* Removes bullet points from nav */
+        padding: 0;                    /* Removes default padding */
+        margin: 0;                     /* Removes default margin */
+        display: flex;                 /* Makes nav links horizontal */
+        align-items: stretch;          /* Stretches items to same height */
+        justify-content: space-between;/* Evenly spaces links across bar */
+        background: #f8f8f8;           /* Nav bar background color */
+        border: 2px solid #333;        /* Nav bar border */
+        border-radius: 8px;            /* Rounded corners for nav bar */
+        width: 100%;                   /* Nav bar takes full width */
+        max-width: 1000px;             /* Max width of nav bar */
+        box-sizing: border-box;        /* Includes border in width */
+        overflow: hidden;              /* Hides overflow for rounded corners */
+    }
+
+    nav ul li {
+        display: flex;                 /* Makes each nav item a flex container */
+        flex: 1 1 0;                   /* Each nav item grows equally */
+    }
+
+    .nav-link {
+        flex: 1 1 0;                   /* Each link fills its nav item */
+        text-align: center;            /* Centers link text */
+        padding: 0.5em 0;              /* Vertical padding for link height */
+        background: #fff;              /* Link background color */
+        color: #333;                   /* Link text color */
+        text-decoration: none;         /* Removes underline */
+        border: none;                  /* No border on links */
+        border-radius: 0;              /* No rounded corners on links */
+        transition: background 0.2s, color 0.2s; /* Smooth hover effect */
+        font-weight: 500;              /* Medium font weight */
+        font-size: 1.1em;              /* Slightly larger text */
+        height: 100%;                  /* Link fills nav item height */
+        margin: 0;                     /* No margin between links */
+        display: flex;                 /* Makes link content a flex container */
+        align-items: center;           /* Vertically centers link text */
+        justify-content: center;       /* Horizontally centers link text */
+    }
+
+    nav ul li:not(:first-child) .nav-link {
+        border-left: 2px solid #333;   /* Divider between links */
+    }
+
+    .nav-link:hover {
+        background: #333;              /* Link background on hover */
+        color: #fff;                   /* Link text color on hover */
+    }
+
+    body {
+        background-color: #f0f4f8;     /* Page background color */
+    }
+
+    h1 {
+        font-family: 'Open Sans', sans-serif; /* Heading font */
+        color: #2a4d69;                       /* Heading color */
+        font-size: 2.5em;                     /* Heading size */
+        font-weight: bold;                    /* Heading weight */
+        margin-bottom: 0.5em;                 /* Space below heading */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eastern Oregon Newman</h1> <!-- Main site heading -->
+        <nav>
+            <ul>
+                <li><a href="home.html" class="nav-link" >Home</a></li>      <!-- Home link -->
+                <li><a href="about.html" class="nav-link">About</a></li>     <!-- About link -->
+                <li><a href="services.html" class="nav-link">Services</a></li><!-- Services link -->
+                <li><a href="contact.html" class="nav-link">Contact</a></li> <!-- Contact link -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to Our Website</h2> <!-- Section heading -->
+        <p>This is the home page of our website. Explore the sections to learn more about us and what we offer.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 eonewman</p> <!-- Footer copyright -->
+    </footer>
+</body>
+</html>
